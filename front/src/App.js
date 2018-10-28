@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
-import "./App.css";
 
+// C
 import Index from "./components/Index";
 import Navbar from "./components/Navbar";
 import Feed from "./components/Feed";
@@ -12,7 +12,7 @@ class App extends Component {
     return (
       <div className="container">
         <BrowserRouter>
-          <div className="margin-top">
+          <div>
             <Navbar />
             <Switch>
               <Route path="/" component={Index} exact />

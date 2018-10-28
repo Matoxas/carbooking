@@ -1,6 +1,4 @@
-/*
- * Globals
- */
+/* ================== GLOBAL STYLES ====================== */
 
 /* Links */
 a,
@@ -19,9 +17,7 @@ a:hover {
   border: 0.05rem solid #fff;
 }
 
-/*
- * Base structure
- */
+/* ================== BASE STRUCTURE ====================== */
 
 html,
 body {
@@ -35,16 +31,7 @@ body {
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
 }
 
-/*
- * Header
- */
-.masthead {
-  margin-bottom: 2rem;
-}
-
-.masthead-brand {
-  margin-bottom: 0;
-}
+/* ================== NAVBAR STYLES ====================== */
 
 .nav-masthead .nav-link {
   padding: 0.25rem 0;
@@ -56,7 +43,7 @@ body {
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255, 255, 255, 0.25);
+  border-bottom-color: rgba(219, 122, 122, 0.25);
 }
 
 .nav-masthead .nav-link + .nav-link {
@@ -77,30 +64,30 @@ body {
   }
 }
 
-/*
- * Cover
- */
-.cover {
-  padding: 0 1.5rem;
-}
-.cover .btn-lg {
-  padding: 0.75rem 1.25rem;
-  font-weight: 700;
-}
-
-/*
- * Footer
- */
-.mastfoot {
-  color: rgba(255, 255, 255, 0.5);
-}
+/* ================== END NAVBAR STYLES ====================== */
 
 /* =========================== UNIVERSAL MODIFIERS ===========================  */
 
 .margin-top {
-  margin-top: 1rem;
+  margin-top: 1rem !important;
 }
 
 .margin-top--big {
-  margin-top: 5rem;
+  margin-top: 2rem !important;
+}
+
+.padding-top {
+  padding-top: 1rem !important;
+}
+
+.margin-bottom {
+  margin-bottom: 1rem !important;
+}
+
+.margin-bottom--big {
+  margin-bottom: 2rem !important;
+}
+
+.clearfix {
+  clear: both;
 }
