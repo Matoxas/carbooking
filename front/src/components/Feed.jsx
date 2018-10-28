@@ -1,11 +1,13 @@
 import React from "react";
+import carListing from './carListing';
 
 const Feed = () => {
   return (
     <div>
       <div className="row">
         <div className="col-md-12">
-          <h2>Feedas</h2>
+            <div>
+            </div>
         </div>
       </div>
     </div>
