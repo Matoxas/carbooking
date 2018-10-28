@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 
-// C
+// Components
 import Feed from "./components/Feed";
 import Navbar from "./components/Navbar";
 import Index from "./components/Index";
