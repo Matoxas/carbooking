@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./style/App.css";
+import "./style/index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
-import { Provider } from "mobx-rect";
+import { Provider } from "mobx-react";
 import CarStore from "./stores/CarStore";
 
 const Root = (
