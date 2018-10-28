@@ -2,13 +2,13 @@ import React from "react";
 
 const Item = () => {
   return (
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Title</h5>
-        <p class="card-text">
+    <div className="card">
+      <div className="card-body">
+        <h5 className="card-title">Title</h5>
+        <p className="card-text">
           With supporting text below as a natural lead-in to additional content.
         </p>
-        <a href="#" class="btn btn-primary">
+        <a href="#" className="btn btn-primary">
           Take me there!
         </a>
       </div>

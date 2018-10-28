@@ -2,8 +2,12 @@ import React from "react";
 
 const Sidebar = () => {
   return (
-    <div className="sidebar">
-      <h2>hello from sidebar</h2>
+    <div className="sidebar margin-bottom">
+      <div className="card min-height">
+        <div className="card-body">
+          <h2>hello from sidebar</h2>
+        </div>
+      </div>
     </div>
   );
 };
