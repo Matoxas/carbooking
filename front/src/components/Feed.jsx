@@ -8,30 +8,35 @@ class Feed extends Component {
     e.preventDefault();
     const car = this.car.value;
     this.props.CarStore.addCar(car);
+    this.car.value = "";
   };
 
   render() {
     const { CarStore } = this.props;
     return (
-      <div className="Index">
-        <div className="row">
-          <div className="col-md">
-            <h2>You Have {CarStore.carsCount} Cars</h2>
-            <form onSubmit={e => this.handleSubmit(e)}>
-              <input
-                type="text"
-                placeholder="enter car name"
-                ref={input => (this.car = input)}
-              />
-              <button>Submit</button>
-            </form>
-          </div>
-          <div className="col-md">
-            <ul>
-              {CarStore.cars.map(car => (
-                <li key={car}>{car}</li>
-              ))}
-            </ul>
+      <div className="feed">
+        <div className="main">
+          <div className="container padding-top">
+            <div className="row">
+              <div className="col-md">
+                <h2>You Have {CarStore.carsCount} Cars</h2>
+                <form onSubmit={e => this.handleSubmit(e)}>
+                  <input
+                    type="text"
+                    placeholder="enter car name"
+                    ref={input => (this.car = input)}
+                  />
+                  <button>Submit</button>
+                </form>
+              </div>
+              <div className="col-md">
+                <ul>
+                  {CarStore.cars.map(car => (
+                    <li key={car}>{car}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
