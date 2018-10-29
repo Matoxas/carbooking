@@ -4,8 +4,13 @@ const carListing = () => {
     return (
         <div className="container-fluid">
             <div className="row">
-                <div className="col-sm-6">Masinos informacija</div>
-                <div className="col-sm-6">Masinos nuotrauka ir pan</div>
+                <div className="col-sm-6">
+                    <h3>Masinos modelis</h3>
+                    <h3>Kaina</h3>
+                    <h3>Ivertinimas</h3>
+                    <h3>Kalendorius</h3>
+                </div>
+                <div className="col-sm-6">image</div>
             </div>
         </div>
     )

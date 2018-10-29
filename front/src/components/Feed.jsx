@@ -1,20 +1,6 @@
-<<<<<<< HEAD
-import React from "react";
-import carListing from './carListing';
-
-const Feed = () => {
-  return (
-    <div>
-      <div className="row">
-        <div className="col-md-12">
-            <div>
-            </div>
-=======
 import React, { Component } from "react";
 import { inject, observer } from "mobx-react";
 
-@inject("CarStore")
-@observer
 class Feed extends Component {
   handleSubmit = e => {
     e.preventDefault();
@@ -50,7 +36,6 @@ class Feed extends Component {
               </div>
             </div>
           </div>
->>>>>>> ea8f325ae09cd8dc7a0d376cbe458056575bac14
         </div>
       </div>
     );

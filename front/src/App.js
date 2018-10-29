@@ -6,6 +6,7 @@ import Feed from "./components/Feed";
 import Navbar from "./components/Navbar";
 import Index from "./components/Index";
 import Switch from "react-router-dom/Switch";
+import carListing from "./components/carListing";
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
           <div>
             <Navbar />
             <Switch>
+              <Route path = "/carListing" component={carListing} exact/>
               <Route path="/" component={Index} exact />
               <Route path="/feed" component={Feed} exact />
               <Route component={Index} />
