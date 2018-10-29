@@ -2,15 +2,15 @@ import React, { Component } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 
 // C
-import Index from "./components/Index";
-import Navbar from "./components/Navbar";
 import Feed from "./components/Feed";
+import Navbar from "./components/Navbar";
+import Index from "./components/Index";
 import Switch from "react-router-dom/Switch";
 
 class App extends Component {
   render() {
     return (
-      <div className="container">
+      <div>
         <BrowserRouter>
           <div>
             <Navbar />
