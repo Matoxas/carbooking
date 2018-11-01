@@ -1,21 +1,28 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "../style/Navbar.css";
 
 const Navbar = () => {
   return (
-    <header className="masthead mb-auto">
-      <div className="inner">
-        <h3 className="masthead-brand">Cover</h3>
-        <nav class="nav nav-masthead justify-content-center">
-          <NavLink to="/" exact={true} className="nav-link">
-            Pagrindinis
-          </NavLink>
-          <NavLink to="/feed" className="nav-link">
-            Feed
-          </NavLink>
-        </nav>
-      </div>
-    </header>
+    <div className="container">
+      <header className="masthead mb-auto padding-top text-center margin-bottom">
+        <div className="inner">
+          <h3 className="masthead-brand">CarBooking</h3>
+          <nav className="nav nav-masthead justify-content-center">
+            <NavLink to="/" exact={true} className="nav-link">
+              Pagrindinis
+            </NavLink>
+            <NavLink to="/feed" className="nav-link">
+              Feed
+            </NavLink>
+              <NavLink to="/carListing" className="nav-link">
+                  Car Listing
+              </NavLink>
+          </nav>
+          <div className="clearfix" />
+        </div>
+      </header>
+    </div>
   );
 };
 

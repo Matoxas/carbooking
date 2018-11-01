@@ -1,10 +1,11 @@
 import React from "react";
+import "../style/index.css";
 
 const Index = () => {
   return (
-    <div className="row">
-      <div className="col-md-12">
-        <h2>Indexas</h2>
+    <div className="container padding-top">
+      <div className="flex flex-center fullHeight">
+        <h2>Čia bus pagrindinis paieškos laukas</h2>
       </div>
     </div>
   );
