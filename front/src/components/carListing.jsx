@@ -10,7 +10,7 @@ const carListing = () => {
                     <h3>Ivertinimas</h3>
                     <h3>Kalendorius</h3>
                 </div>
-                <div className="col-sm-6">image</div>
+                <div className="col-sm-6"><img src="" width="100px"/></div>
             </div>
         </div>
     )
