@@ -1,20 +1,22 @@
-import React from "react";
+import React, { Component } from "react";
+import { inject, observer } from "mobx-react";
 import Item from "./item";
 
-const Items = () => {
-  return (
-    <div className="row">
-      <div className="col-md-4 col-sm-6 margin-bottom">
-        <Item />
+@inject("CarStore")
+@observer
+class Items extends Component {
+  render() {
+    const cars = this.props.CarStore.cars;
+    return (
+      <div className="row">
+        {cars.map(car => (
+          <div className="col-sm-6 col-lg-4">
+            <Item key={car.brand} car={car} />
+          </div>
+        ))}
       </div>
-      <div className="col-md-4 col-sm-6 margin-bottom">
-        <Item />
-      </div>
-      <div className="col-md-4 col-sm-6 margin-bottom">
-        <Item />
-      </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default Items;

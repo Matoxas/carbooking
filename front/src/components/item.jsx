@@ -1,19 +1,22 @@
-import React from "react";
+import React, { Component } from "react";
 
-const Item = () => {
-  return (
-    <div className="card">
-      <div className="card-body">
-        <h5 className="card-title">Title</h5>
-        <p className="card-text">
-          With supporting text below as a natural lead-in to additional content.
-        </p>
-        <a href="#" className="btn btn-primary">
-          Take me there!
-        </a>
+class Item extends Component {
+  render() {
+    const { car } = this.props;
+    return (
+      <div className="card">
+        <div className="card-body">
+          <div className="card-image">
+            <img src={car.image} alt="" />
+          </div>
+          <p className="card-time">3 hours ago</p>
+          <h5 className="card-title">{car.brand}</h5>
+          <h5 className="card-title card-title--price">€ {car.price}</h5>
+          <h5 className="card-title card-title--sub">{car.subbrand}</h5>
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default Item;

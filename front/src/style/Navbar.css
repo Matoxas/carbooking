@@ -22,6 +22,12 @@
   border-bottom-color: #fff;
 }
 
+.masthead-brand {
+  padding-top: 10px;
+  width: 150px;
+  height: 100%;
+}
+
 @media (min-width: 48em) {
   .masthead-brand {
     float: left;
