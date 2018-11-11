@@ -1,0 +1,17 @@
+.info {
+    margin: 20px;
+    text-shadow: 0 0 0 0;
+}
+
+.info__name {
+    font-size: 3em;
+}
+
+.info__details {
+    font-size: 2em;
+}
+
+.info__comments {
+    font-size: 0.5em;
+    margin-bottom: 60px;
+}
