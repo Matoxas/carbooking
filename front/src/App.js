@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import { BrowserRouter, Route } from "react-router-dom";
-import { inject, observer } from "mobx-react";
+import React, {Component} from "react";
+import {BrowserRouter, Route} from "react-router-dom";
+import {inject, observer} from "mobx-react";
 
 // Components
 import Feed from "./components/Feed";
@@ -12,33 +12,33 @@ import carListing from "./components/carListing/carListing";
 @inject("CarStore")
 @observer
 class App extends Component {
-  componentDidMount() {
-    {
-      this.props.CarStore.setCars("asd");
+    componentDidMount() {
+        {
+            this.props.CarStore.setCars("asd");
+        }
     }
-  }
 
-  setCars = carList => {
-    console.log(carList);
-  };
+    setCars = carList => {
+        console.log(carList);
+    };
 
-  render() {
-    return (
-      <div>
-        <BrowserRouter>
-          <div>
-            <Navbar />
-            <Switch>
-              <Route path ="/carListing" component={carListing} exact/>
-              <Route path="/" component={Index} exact />
-              <Route path="/feed" component={Feed} exact />
-              <Route component={Index} />
-            </Switch>
-          </div>
-        </BrowserRouter>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div>
+                <BrowserRouter>
+                    <div>
+                        <Navbar/>
+                        <Switch>
+                            <Route path="/" component={Index} exact/>
+                            <Route path="/feed" component={Feed} exact/>
+                            <Route path="/carListing" component={carListing} exact/>
+                            <Route component={Index}/>
+                        </Switch>
+                    </div>
+                </BrowserRouter>
+            </div>
+        );
+    }
 }
 
 export default App;
